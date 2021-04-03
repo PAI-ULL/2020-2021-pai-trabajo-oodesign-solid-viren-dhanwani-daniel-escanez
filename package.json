@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/PAI-ULL/2020-2021-pai-trabajo-oodesign-solid-viren-dhanwani-daniel-escanez#readme",
   "devDependencies": {
-    "eslint-config-eslint": "^7.0.0"
   }
 }
