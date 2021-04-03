@@ -1,0 +1,25 @@
+{
+  "name": "2020-2021-pai-trabajo-oodesign-solid-viren-dhanwani-daniel-escanez",
+  "version": "1.0.0",
+  "description": "This directory is organised as follows:",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PAI-ULL/2020-2021-pai-trabajo-oodesign-solid-viren-dhanwani-daniel-escanez.git"
+  },
+  "author": "Viren Sajju Dhanwani Dhanwani <alu0101230948@ull.edu.es> (https://github.com/alu0101230948)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PAI-ULL/2020-2021-pai-trabajo-oodesign-solid-viren-dhanwani-daniel-escanez/issues"
+  },
+  "homepage": "https://github.com/PAI-ULL/2020-2021-pai-trabajo-oodesign-solid-viren-dhanwani-daniel-escanez#readme",
+  "devDependencies": {
+    "eslint-config-eslint": "^7.0.0"
+  }
+}
