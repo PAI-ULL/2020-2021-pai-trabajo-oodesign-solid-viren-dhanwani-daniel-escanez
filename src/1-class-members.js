@@ -20,10 +20,9 @@ class GenericClass {
   instanceVariable = 10;
   static staticVariable = 10;
 
-  constructor (value) {
+  constructor(value) {
     this.instanceVariable += value;
   }
-  
 }
 
 const instance1 = new GenericClass(5);

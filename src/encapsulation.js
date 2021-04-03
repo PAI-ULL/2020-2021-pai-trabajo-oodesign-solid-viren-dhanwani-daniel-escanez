@@ -18,7 +18,7 @@
  */
 class Counter {
   /** @type {Number} Times that the counter has been clicked */
-  #count = 0
+  #count = 0;
 
   /** Increases the counter by 1 unit */
   click() {

@@ -14,16 +14,16 @@
 'use strict';
 
 class Point {
-  constructor (x, y) {
-    this.x = x;
-    this.y = y;
+  constructor(abscissa = 0, ordinate = 0) {
+    this.abscissa_ = abscissa;
+    this.ordinate_ = ordinate;
   }
 
-  static distance (a, b) {
-    const dx = a.x - b.x;
-    const dy = a.y - b.y;
-
-    return Math.sqrt (dx * dx + dy * dy);
+  static distance(a, b) {
+    const abscissaDistance = a.abscissa_ - b.abscissa_;
+    const ordenateDistance = a.ordinate_ - b.ordinate_;
+    return Math.sqrt(abscissaDistance * abscissaDistance +
+        ordenateDistance * ordenateDistance);
   }
 }
 
