@@ -5,6 +5,7 @@
   * Programación de Aplicaciones Interactivas
   *
   * @author Viren Sajju Dhanwani Dhanwani
+  * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Outputs information about daily climatologies in Santa Cruz de Tenerife
   * @see http://www.aemet.es/es/datos_abiertos/AEMET_OpenData

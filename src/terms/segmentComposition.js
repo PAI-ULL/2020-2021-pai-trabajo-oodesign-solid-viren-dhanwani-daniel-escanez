@@ -9,6 +9,9 @@
   * @since 30.Mar.2021
   */
 
+import {Point2D} from './point2d.js';
+
+
 'use strict';
 
 /**
@@ -29,6 +32,6 @@ export class SegmentComposition {
    * @return {number} Distance between firstPoint_ and secondPoint_
    */
   length() {
-    return this.firstPoint_.distance(this.secondPoint_);
+    return this.firstPoint_.instanceDistance(this.secondPoint_);
   }
 }
