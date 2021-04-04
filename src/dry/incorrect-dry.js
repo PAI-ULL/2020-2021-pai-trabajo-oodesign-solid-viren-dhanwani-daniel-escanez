@@ -12,7 +12,7 @@
 
 'use strict';
 
-import { readFile } from 'fs/promises';
+import {readFile} from 'fs/promises';
 
 /**
 * Transforms a JSON file into an object
@@ -29,7 +29,7 @@ const getData = async (filepath) => {
  * @param {String} key property of the object to be analyzed
  * @return {Object} day with the highest temperature
  */
- const highestTemperature = (data) => {
+const highestTemperature = (data) => {
   return data.reduce((max, day) => {
     const actual = Number(parseFloat(day['tmax'].replace(',', '.')));
     const maximum = Number(parseFloat(max['tmax'].replace(',', '.')));
@@ -52,7 +52,7 @@ const showHighestTemperature = (data) => {
  * @param {String} key property of the object to be analyzed
  * @return {Object} day with the highest precipitation
  */
- const highestPrecipitation = (data) => {
+const highestPrecipitation = (data) => {
   return data.reduce((max, day) => {
     const actual = Number(parseFloat(day['prec'].replace(',', '.')));
     const maximum = Number(parseFloat(max['prec'].replace(',', '.')));

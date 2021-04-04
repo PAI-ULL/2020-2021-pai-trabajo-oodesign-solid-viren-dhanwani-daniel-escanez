@@ -12,7 +12,7 @@
 
 'use strict';
 
-import { readFile } from 'fs/promises';
+import {readFile} from 'fs/promises';
 
 /**
  * Transforms a JSON file into an object
