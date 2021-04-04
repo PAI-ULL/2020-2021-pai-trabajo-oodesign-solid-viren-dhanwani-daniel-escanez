@@ -5,7 +5,7 @@
   * Programación de Aplicaciones Interactivas
   *
   * @author Viren Sajju Dhanwani Dhanwani
-  * @author José Daniel Escánez Expósito 
+  * @author José Daniel Escánez Expósito
   * @since 30.Mar.2021
   * @desc Showcasing difference between class and instance variables
   * @see https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/Public_class_fields

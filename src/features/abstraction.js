@@ -5,7 +5,7 @@
   * Programación de Aplicaciones Interactivas
   *
   * @author Viren Sajju Dhanwani Dhanwani
-  * @author José Daniel Escánez Expósito 
+  * @author José Daniel Escánez Expósito
   * @since 31.Mar.2021
   * @desc Forcing abstract classes in JavaScript
   * @see https://www.educba.com/abstract-classes-in-javascript/

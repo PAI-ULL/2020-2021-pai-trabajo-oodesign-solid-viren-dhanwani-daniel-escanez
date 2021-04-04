@@ -5,17 +5,15 @@
   * Programación de Aplicaciones Interactivas
   *
   * @author Viren Sajju Dhanwani Dhanwani
-  * @author José Daniel Escánez Expósito 
+  * @author José Daniel Escánez Expósito
   * @since 30.Mar.2021
-  * @desc Inheritance example
+  * @desc Inheritance example using the Person and Teacher classes
   * @see https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Inheritance
   */
 
 'use strict';
 
-/**
- * Class that gathers information about a person
- */
+/** Class that gathers information about a person */
 class Person {
   /**
    * Create a Person
@@ -52,7 +50,7 @@ han.greeting();   // Hi! I'm Han
 let leia = new Person('Leia', 'Organa', 19, 'female', ['Government']);
 leia.farewell();  // Leia has left the building. Bye for now
 
-/*
+/* 
 class Teacher extends Person {
   constructor(first, last, age, gender, interests, subject, grade) {
     this.name = {
@@ -60,12 +58,12 @@ class Teacher extends Person {
       last
     };
 
-  this.age = age;
-  this.gender = gender;
-  this.interests = interests;
-  // subject and grade are specific to Teacher
-  this.subject = subject;
-  this.grade = grade;
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+    // subject and grade are specific to Teacher
+    this.subject = subject;
+    this.grade = grade;
   }
 }
 */

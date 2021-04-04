@@ -5,7 +5,7 @@
   * Programación de Aplicaciones Interactivas
   *
   * @author Viren Sajju Dhanwani Dhanwani
-  * @author José Daniel Escánez Expósito 
+  * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Single Responsability Principle
   * @see https://en.wikipedia.org/wiki/Single-responsibility_principle
