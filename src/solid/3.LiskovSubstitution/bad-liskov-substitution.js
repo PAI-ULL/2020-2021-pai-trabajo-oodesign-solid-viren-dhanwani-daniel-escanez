@@ -32,9 +32,13 @@ class Penguin extends Bird {
    * @throws {Error}
    */
   fly() {
-    throw new Error('Sorry, I cant fly');
+    throw new Error('Sorry, I cannot fly :o(');
   }
 }
 
-const penguin = new Penguin();
-console.log(penguin.fly());
+try {
+  const penguin = new Penguin();
+  console.log(penguin.fly());
+} catch (err) {
+  console.log(err.message);
+}
