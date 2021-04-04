@@ -7,7 +7,7 @@
   * @author Viren Sajju Dhanwani Dhanwani
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
-  * @desc Code that doest not follow the Interface Segregation Principle
+  * @desc Code that does not follow the Interface Segregation Principle
   * @see https://en.wikipedia.org/wiki/Interface_segregation_principle
   */
 

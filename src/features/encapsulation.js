@@ -17,7 +17,7 @@
  * Class that defines a private variable that can only be modified with methods
  */
 class Counter {
-  /** @type {Number} Times that the counter has been clicked */
+  /** @type {number} Times that the counter has been clicked */
   #count = 0;
   /** Increases the counter by 1 unit */
   click() {
@@ -25,10 +25,10 @@ class Counter {
   }
   /**
    * Access the current count value
-   * @return {Number} Value of count
+   * @return {number} Value of count
    */
   getCount() {
-    return this.#count.toString()
+    return this.#count;
   }
 }
 
