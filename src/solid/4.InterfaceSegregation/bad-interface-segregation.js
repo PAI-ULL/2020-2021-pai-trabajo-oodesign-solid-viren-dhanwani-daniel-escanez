@@ -13,6 +13,7 @@
 
 'use strict';
 
+/**  */
 class DOMTraverser {
   constructor(settings) {
     this.settings = settings;
