@@ -10,7 +10,7 @@
   * @desc Using the class Point3D
   */
 
-import { Point3D } from './point3d.js';
+import {Point3D} from './point3d.js';
 
 'use strict';
 
