@@ -8,7 +8,7 @@
   * @author José Daniel Escánez Expósito
   * @since 30.Mar.2021
   * @desc True Encapsulation example
-  * @see https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/Private_class_fields
+  * @see https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/
   */
 
 'use strict';
