@@ -50,24 +50,6 @@ han.greeting(); // Hi! I'm Han
 const leia = new Person('Leia', 'Organa', 19, 'female', ['Government']);
 leia.farewell(); // Leia has left the building. Bye for now
 
-/*
-class Teacher extends Person {
-  constructor(first, last, age, gender, interests, subject, grade) {
-    this.name = {
-      first,
-      last
-    };
-
-    this.age = age;
-    this.gender = gender;
-    this.interests = interests;
-    // subject and grade are specific to Teacher
-    this.subject = subject;
-    this.grade = grade;
-  }
-}
-*/
-
 /**
  * Class that gathers information about a Teacher
  * @extends Person
