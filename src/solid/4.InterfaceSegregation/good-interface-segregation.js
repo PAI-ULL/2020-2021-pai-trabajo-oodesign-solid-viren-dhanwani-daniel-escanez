@@ -13,32 +13,41 @@
 
 'use strict';
 
+/** Class that simulates a DOMTraverser */
 class DOMTraverser {
+  /**
+   * Creates a DOMTraverser
+   * @param {Object} settings
+   */
   constructor(settings) {
-    this.settings = settings;
-    this.options = settings.options;
+    this.settings_ = settings;
+    this.options_ = settings.options;
     this.setup();
   }
-
+  /**
+   * Setup the DOMTraverser
+   */
   setup() {
-    this.rootNode = this.settings.rootNode;
+    this.rootNode_ = this.settings_.rootNode_;
+    console.log('Setting up...');
     this.setupOptions();
   }
-
+  /**
+   * Check that an animation module exist and performs the setup
+   */
   setupOptions() {
-    if (this.options.animationModule) {
-      // ...
+    if (this.options_.animationModule) {
+      this.options_.animationModule().setup();
     }
-  }
-
-  traverse() {
-    // ...
   }
 }
 
-const $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName('body'),
+const DOM_TRAVERSER = new DOMTraverser({
+  rootNode: 'body',
   options: {
-    animationModule() {}
+    animationModule: () => {
+      // ...
+      return { setup: () => { console.log('Animating...') } };
+    }
   }
 });

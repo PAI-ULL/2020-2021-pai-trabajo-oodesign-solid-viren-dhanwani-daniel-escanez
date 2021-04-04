@@ -34,22 +34,35 @@ class Car {
 
 /** Class that simulates a engine */
 class Engine {
+  /** 
+   * Creates a VWEngine 
+   * @param {number} volume
+   * @param {string} type
+   */
   constructor(volume, type) {
     this.volume_ = volume;
     this.type_ = type;
   }
+  /**
+   * Gets the volume_ value
+   * @return {number}
+   */
   getVolume() {
     return this.volume_;
   }
 }
 
+/** Class that simulates a VWEngine */
 class VWEngine extends Engine {
+  /** Creates a VWEngine */
   constructor() {
     super(1.2, 'internal-combustion');
   }
 }
 
+/** Class that simulates a RenaultEngine */
 class RenaultEngine extends Engine {
+  /** Creates a RenaultEngine */
   constructor() {
     super(1.6, 'diesel');
   }

@@ -21,8 +21,8 @@ class Employee {
    * @throws {Error}
    */
   constructor() {
-    if (this.constructor() === Employee) {
-      throw new Error(' Object of Abstract Class cannot be created');
+    if (this.constructor === Employee) {
+      throw new Error('Object of Abstract Class cannot be created');
     }
   }
   /**

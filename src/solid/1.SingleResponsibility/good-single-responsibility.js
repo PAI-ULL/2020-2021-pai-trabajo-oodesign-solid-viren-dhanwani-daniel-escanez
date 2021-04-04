@@ -46,7 +46,7 @@ class Mechanic {
    *     that is this class' responsibility
    */
   changeOil(car) {
-    console.log('changing oil of ' car.toString());
+    console.log('changing oil of ' + car.toString());
   }
 }
 
