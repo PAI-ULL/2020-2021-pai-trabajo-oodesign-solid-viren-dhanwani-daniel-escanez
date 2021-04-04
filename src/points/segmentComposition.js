@@ -11,7 +11,6 @@
 
 import {Point2D} from './point2d.js';
 
-
 'use strict';
 
 /**
