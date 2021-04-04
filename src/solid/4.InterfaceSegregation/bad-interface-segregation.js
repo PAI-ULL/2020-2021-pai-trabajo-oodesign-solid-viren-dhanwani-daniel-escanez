@@ -37,6 +37,8 @@ const DOM_TRAVERSER = new DOMTraverser({
   rootNode: 'body',
   animationModule: () => {
     // ...
-    return { setup: () => { console.log('Animating...') } };
-  } // Most of the time, we won't need to animate when traversing
+    return {setup: () => console.log('Animating...')};
+  }, // Most of the time, we won't need to animate when traversing
 });
+
+console.log(DOM_TRAVERSER);

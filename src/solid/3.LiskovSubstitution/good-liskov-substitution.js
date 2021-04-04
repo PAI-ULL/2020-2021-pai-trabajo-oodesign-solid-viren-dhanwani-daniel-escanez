@@ -27,7 +27,9 @@ class Bird {
 
 /** Class that simulates a eagle */
 class Eagle extends Bird {
-  /** An eagle diving */
+  /** An eagle diving
+   * @return {String} Information about the eagle diving
+   */
   dive() {
     return 'Eagle diving';
   }

@@ -23,7 +23,7 @@ class Car {
   constructor(brand, model) {
     this.brand_ = brand;
     this.model_ = model;
-    this.engine_ = new VWEngine(); 
+    this.engine_ = new VWEngine();
   }
   /** Prints info about the car */
   getInfo() {
@@ -40,4 +40,4 @@ class VWEngine {
 }
 
 const car = new Car('VW', 'Golf');
-car.getInfo(); //VW Golf 1.2
+car.getInfo(); // VW Golf 1.2

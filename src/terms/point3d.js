@@ -10,7 +10,7 @@
   * @see https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance
   */
 
-import { Point2D } from './point2d.js';
+import {Point2D} from './point2d.js';
 
 'use strict';
 
@@ -18,6 +18,8 @@ import { Point2D } from './point2d.js';
 export class Point3D extends Point2D {
   /**
    * Create a Point3D
+   * @param {number} [abscissa = 0]
+   * @param {number} [ordinate = 0]
    * @param {number} [applicate = 0]
    */
   constructor(abscissa = 0, ordinate = 0, applicate = 0) {
@@ -50,25 +52,27 @@ export class Point3D extends Point2D {
     const ABSCISSA_DISTANCE = firstPoint.getAbscissa() - secondPoint.getAbscissa();
     const ORDINATE_DISTANCE = firstPoint.getOrdinate() - secondPoint.getOrdinate();
     const APPLICATE_DISTANCE = firstPoint.getApplicate() - secondPoint.getApplicate();
-    return Math.sqrt(ABSCISSA_DISTANCE ** 2 + ORDINATE_DISTANCE ** 2 + APPLICATE_DISTANCE ** 2);
+    return Math.sqrt(ABSCISSA_DISTANCE ** 2 +
+        ORDINATE_DISTANCE ** 2 + APPLICATE_DISTANCE ** 2);
   }
   /**
    * Calculates the distance between the instance Point3D and the given Point3D
    * @param {Point3D} anotherPoint3D Will be used to calculate the distance
-   * @return Distance between the instance Point3D and anotherPoint3D
+   * @return {number} Distance between the instance Point3D and anotherPoint3D
    */
   instanceDistance(anotherPoint3D = new Point3D()) {
     const ABSCISSA_DISTANCE = this.abscissa_ - anotherPoint3D.getAbscissa();
     const ORDINATE_DISTANCE = this.ordinate_ - anotherPoint3D.getOrdinate();
     const APPLICATE_DISTANCE = this.getApplicate() - anotherPoint3D.getApplicate();
-    return Math.sqrt(ABSCISSA_DISTANCE ** 2 + ORDINATE_DISTANCE ** 2 + APPLICATE_DISTANCE ** 2);
+    return Math.sqrt(ABSCISSA_DISTANCE ** 2 +
+        ORDINATE_DISTANCE ** 2 + APPLICATE_DISTANCE ** 2);
   }
   /**
    * Uses the static method to simulate the instanceDistance
    * @param {Point3D} anotherPoint3D
-   * @return Distance between the instance Point3D and anotherPoint3D
+   * @return {number} Distance between the instance Point3D and anotherPoint3D
    */
   instanceDistanceUsingStatic(anotherPoint3D = new Point3D()) {
-    return Point3D.staticDistance(this, anotherPoint3D);;
+    return Point3D.staticDistance(this, anotherPoint3D);
   }
 }

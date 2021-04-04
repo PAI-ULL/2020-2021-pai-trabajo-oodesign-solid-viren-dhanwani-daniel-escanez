@@ -8,7 +8,7 @@
   * @author José Daniel Escánez Expósito
   * @since 31.Mar.2021
   * @desc Polymorphism in JavaScript
-  * @see https://medium.com/@viktor.kukurba/object-oriented-programming-in-javascript-3-polymorphism-fb564c9f1ce8
+  * @see https://bit.ly/3uoq4HU
   */
 
 'use strict';
@@ -50,6 +50,10 @@ class Circle extends Shape {
   }
 }
 
+/**
+ * Class that simulated a Rectangle
+ * @extends Shape
+ */
 class Rectangle extends Shape {
   /**
    * Create a rectangle
@@ -70,6 +74,10 @@ class Rectangle extends Shape {
   }
 }
 
+/**
+ * Class that simulated a Triangle
+ * @extends Shape
+ */
 class Triangle extends Shape {
   /**
    * Create a triangle

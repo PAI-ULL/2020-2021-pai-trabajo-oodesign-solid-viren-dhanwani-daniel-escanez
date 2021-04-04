@@ -42,8 +42,8 @@ class Car {
 /** Class that simulates a mechanic */
 class Mechanic {
   /**
-   * Prints 'changing oil' representing a more complex proccess
-   *     that is this class' responsibility
+   * Prints information representing a complex proccess that is this class' responsibility
+   * @param {Car} car which oil will be changed
    */
   changeOil(car) {
     console.log('changing oil of ' + car.toString());

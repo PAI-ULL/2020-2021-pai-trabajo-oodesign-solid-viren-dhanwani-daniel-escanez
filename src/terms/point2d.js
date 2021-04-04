@@ -69,7 +69,7 @@ export class Point2D {
   /**
    * Calculates the distance between the instance point2d and the given point2d
    * @param {Point2D} anotherPoint2D Will be used to calculate the distance
-   * @return Distance between the instance point2d and anotherPoint2D
+   * @return {number} Distance between the instance point2d and anotherPoint2D
    */
   instanceDistance(anotherPoint2D = new Point2D()) {
     const ABSCISSA_DISTANCE = this.abscissa_ - anotherPoint2D.getAbscissa();
@@ -79,9 +79,9 @@ export class Point2D {
   /**
    * Uses the static method to simulate the instanceDistance
    * @param {Point2D} anotherPoint2D
-   * @return Distance between the instance point2d and anotherPoint2D
+   * @return {number} Distance between the instance point2d and anotherPoint2D
    */
   instanceDistanceUsingStatic(anotherPoint2D = new Point2D()) {
-    return Point2D.staticDistance(this, anotherPoint2D);;
+    return Point2D.staticDistance(this, anotherPoint2D);
   }
 }

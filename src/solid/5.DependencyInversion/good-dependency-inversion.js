@@ -17,9 +17,9 @@
 class Car {
   /**
    * Creates a car
-   * @param {string} brand
-   * @param {number} model
-   * @param {Engine} enegine
+   * @param {string} brand Brand of the car
+   * @param {number} model Model number of the car
+   * @param {Engine} engine Type of engine used in the car
    */
   constructor(brand, model, engine) {
     this.brand_ = brand;
@@ -34,8 +34,8 @@ class Car {
 
 /** Class that simulates a engine */
 class Engine {
-  /** 
-   * Creates a VWEngine 
+  /**
+   * Creates a VWEngine
    * @param {number} volume
    * @param {string} type
    */
@@ -68,7 +68,10 @@ class RenaultEngine extends Engine {
   }
 }
 
-const engine = new RenaultEngine();
-const car = new Car('VW', 'Golf', engine);
+const engineRenault = new RenaultEngine();
+const engineVW = new VWEngine();
+const carRenault = new Car('Renault', 'Clio', engineRenault);
+const carVW = new Car('VW', 'Golf', engineVW);
 
-car.getInfo(); // VW Golf 1.6
+carRenault.getInfo(); // Renault Clio 1.6
+carVW.getInfo(); // VW Golf 1.2

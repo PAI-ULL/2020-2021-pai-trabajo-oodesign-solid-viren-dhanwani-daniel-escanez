@@ -26,7 +26,7 @@ class Person {
   constructor(first, last, age, gender, interests) {
     this.name = {
       first,
-      last
+      last,
     };
     this.age = age;
     this.gender = gender;
@@ -44,13 +44,13 @@ class Person {
   };
 }
 
-let han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
-han.greeting();   // Hi! I'm Han
+const han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
+han.greeting(); // Hi! I'm Han
 
-let leia = new Person('Leia', 'Organa', 19, 'female', ['Government']);
-leia.farewell();  // Leia has left the building. Bye for now
+const leia = new Person('Leia', 'Organa', 19, 'female', ['Government']);
+leia.farewell(); // Leia has left the building. Bye for now
 
-/* 
+/*
 class Teacher extends Person {
   constructor(first, last, age, gender, interests, subject, grade) {
     this.name = {
@@ -92,8 +92,8 @@ class Teacher extends Person {
   }
 }
 
-let snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
-snape.greeting();           // Hi! I'm Severus.
-snape.farewell();           // Severus has left the building. Bye for now.
-console.log(snape.age);     // 58
+const snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
+snape.greeting(); // Hi! I'm Severus.
+snape.farewell(); // Severus has left the building. Bye for now.
+console.log(snape.age); // 58
 console.log(snape.subject); // Dark arts

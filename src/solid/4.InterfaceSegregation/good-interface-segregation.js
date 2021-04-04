@@ -47,7 +47,9 @@ const DOM_TRAVERSER = new DOMTraverser({
   options: {
     animationModule: () => {
       // ...
-      return { setup: () => { console.log('Animating...') } };
-    }
-  }
+      return {setup: () => console.log('Animating...')};
+    },
+  },
 });
+
+console.log(DOM_TRAVERSER);
