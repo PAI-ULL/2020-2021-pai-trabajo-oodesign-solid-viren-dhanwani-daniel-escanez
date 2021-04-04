@@ -35,12 +35,12 @@ class Person {
 
   /** Outputs the person greeting and saying her name */
   greeting() {
-    console.log(`Hi! I'm ${this.name.first}`);
+    console.log('Hi! I\'m ' + this.name.first);
   };
 
   /** Outputs the person farewell and her name */
   farewell() {
-    console.log(`${this.name.first} has left the building. Bye for now!`);
+    console.log(this.name.first + ' has left the building. Bye for now!');
   };
 }
 

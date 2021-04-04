@@ -7,66 +7,103 @@
   * @author Viren Sajju Dhanwani Dhanwani
   * @author José Daniel Escánez Expósito
   * @since 31.Mar.2021
-  * @desc Forcing abstract classes in JavaScript
+  * @desc Polymorphism in JavaScript
   * @see https://medium.com/@viktor.kukurba/object-oriented-programming-in-javascript-3-polymorphism-fb564c9f1ce8
   */
 
 'use strict';
 
+/** Class that simulates a shape */
 class Shape {
+  /**
+   * The area of a shape is 0
+   * @return {number} 0
+   */
   area() {
     return 0;
   }
+  /**
+   * The name of the class that call the function
+   * @return {string} name of the class
+   */
   toString() {
     return Object.getPrototypeOf(this).constructor.name;
   }
 }
 
+/** Class that simulates a circle */
 class Circle extends Shape {
-  constructor(r) {
+  /**
+   * Create a circle
+   * @param {number} [radius = 0]
+   */
+  constructor(radius = 0) {
     super();
-    this.radius = r;
+    this.radius_ = radius;
   }
-
+  /**
+   * Calculates the area of the circle
+   * @return {number} The area
+   */
   area() {
-    return Math.PI * this.radius ** 2;
+    return Math.PI * this.radius_ ** 2;
   }
 }
 
 class Rectangle extends Shape {
-  constructor(w, h) {
+  /**
+   * Create a rectangle
+   * @param {number} [width = 0]
+   * @param {number} [height = 0]
+   */
+  constructor(width = 0, height = 0) {
     super();
-    this.width = w;
-    this.height = h;
+    this.width_ = width;
+    this.height_ = height;
   }
-
+  /**
+   * Calculates the area of the rectangle
+   * @return {number} The area
+   */
   area() {
-    return this.width * this.height;
+    return this.width_ * this.height_;
   }
 }
 
 class Triangle extends Shape {
-  constructor(b, h) {
+  /**
+   * Create a triangle
+   * @param {number} [base = 0]
+   * @param {number} [height = 0]
+   */
+  constructor(base = 0, height = 0) {
     super();
-    this.base = b;
-    this.height = h;
+    this.base_ = base;
+    this.height_ = height;
   }
-
+  /**
+   * Calculates the area of the triangle
+   * @return {number} The area
+   */
   area() {
-    return this.base * this.height / 2;
+    return this.base_ * this.height_ / 2;
   }
 }
 
+/**
+ * Print the array of shapes with its names and areas, return the total area
+ * @param {Array<numbers>} shapes
+ * @return {number} Total area
+ */
 function cumulateShapes(shapes) {
   return shapes.reduce((sum, shape) => {
     if (shape instanceof Shape) {
-      console.log(`Shape: ${shape.toString()} - area: ${shape.area()}`);
+      console.log('Shape: ' + shape.toString() + ' - area: ' + shape.area());
       return sum + shape.area();
     }
-    throw Error('Bad argument shape.');
+    throw Error('Bad argument shape');
   }, 0);
 }
 
 const shapes = [new Circle(3), new Rectangle(2, 3), new Triangle(3, 4), new Circle(2)];
-
 console.log(cumulateShapes(shapes));

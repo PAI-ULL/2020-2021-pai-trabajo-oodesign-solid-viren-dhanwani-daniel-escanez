@@ -13,51 +13,88 @@
 
 'use strict';
 
+/** Class that simulates a transporter */
 class Transporter {
+  /**
+   * Creates a Transporter
+   * @param {string} type
+   */
   constructor(type) {
     this.type_ = type;
   }
+  /**
+   * Simulates an abstract method throwing an error
+   * @throws {Error}
+   */
   calculatePrice() {
-    if (this.constructor === Transporter) {
+    if (this.constructor() === Transporter) {
       throw new Error('Object of Abstract Class cannot be created');
     }
   };
 }
 
+/** Class that simulates a ship */
 class Ship extends Transporter {
+  /** Creates a ship */
   constructor() {
     super('Ship');
   }
+  /**
+   * Calculate the price
+   * @return {number}
+   */
   calculatePrice() {
     return 300;
   }
 }
 
+/** Class that simulates a truck */
 class Truck extends Transporter {
+  /** Creates a truck */
   constructor() {
     super('Truck');
   }
+  /**
+   * Calculate the price
+   * @return {number}
+   */
   calculatePrice() {
     return 500;
   }
 }
 
+/** Class that simulates a plane */
 class Plane extends Transporter {
+  /** Creates a plane */
   constructor() {
     super('Plane');
   }
+  /**
+   * Calculate the price
+   * @return {number}
+   */
   calculatePrice() {
     return 1000;
   }
 }
 
+/** Class that simulates a transportation */
 class Transportation {
+  /**
+   * Creates a Transportation
+   * @param {string} transporter
+   * @param {number} volume
+   */
   constructor(transporter, volume) {
-    this.transporter = transporter;
-    this.volume = volume;
+    this.transporter_ = transporter;
+    this.volume_ = volume;
   }
+  /**
+   * Calculates the price of the transportation
+   * @return {mumber}
+   */
   calculatePrice() {
-    return this.transporter.calculatePrice() * this.volume;
+    return this.transporter_.calculatePrice() * this.volume_;
   }
 }
 

@@ -13,16 +13,26 @@
 
 'use strict';
 
+/** Class that simulates a transportation */
 class Transportation {
+  /**
+   * Creates a Transportation
+   * @param {string} transporter
+   * @param {number} volume
+   */
   constructor(transporter, volume) {
-    this.transporter = transporter;
-    this.volume = volume;
+    this.transporter_ = transporter;
+    this.volume_ = volume;
   }
+  /**
+   * Calculates the price of the transportation
+   * @return {mumber}
+   */
   calculatePrice() {
-    if (this.transporter == 'Truck') {
-      return 500 * this.volume;
-    } else if (this.transporter == 'Ship') {
-      return 300 * this.volume;
+    if (this.transporter_ === 'Truck') {
+      return 500 * this.volume_;
+    } else if (this.transporter_ === 'Ship') {
+      return 300 * this.volume_;
     }
   }
 }

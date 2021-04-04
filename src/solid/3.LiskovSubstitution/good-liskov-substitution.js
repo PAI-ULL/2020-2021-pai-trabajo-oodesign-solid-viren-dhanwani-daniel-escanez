@@ -13,18 +13,31 @@
 
 'use strict';
 
+/** Class that simulates a bird */
 class Bird {
+  /**
+   * Create a formated string with the speed of the bird
+   * @param {number} speed
+   * @return {string}
+   */
   fly(speed) {
-    return `Flying at ${speed} km/h`;
+    return 'Flying at ' + speed + ' km/h';
   }
 }
 
+/** Class that simulates a eagle */
 class Eagle extends Bird {
+  /** An eagle diving */
   dive() {
     return 'Eagle diving';
   }
+  /**
+   * Create a formated string with the speed of the eagle
+   * @param {number} speed
+   * @return {string}
+   */
   fly(speed) {
-    return `Eagle flying at ${speed} km/h`;
+    return 'Eagle flying at ' + speed + ' km/h';
   }
 }
 

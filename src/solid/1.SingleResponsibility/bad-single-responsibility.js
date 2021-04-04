@@ -13,16 +13,36 @@
 
 'use strict';
 
+/** Class that simulates a car */
 class Car {
+  /**
+   * Creates a car
+   * @param {string} model
+   * @param {number} km
+   */
   constructor(model, km) {
-    this.model = model;
-    this.km = km;
+    this.model_ = model;
+    this.km_ = km;
   }
+  /**
+   * Prints 'running' representing a more complex proccess
+   */
   run() {
-    console.log("running");
+    console.log('running');
   }
+  /**
+   * Creates a string with the formated car
+   * @return {string}
+   */
+  toString() {
+    return this.model_ + ' (' + this.km_ + ')';
+  }
+  /**
+   * Prints 'changing oil' representing a more complex proccess
+   *     that is not this class' responsibility
+   */
   changeOil() {
-    console.log("changing oil");
+    console.log('changing oil of ' + this.toString());
   }
 }
 

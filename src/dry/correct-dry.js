@@ -43,7 +43,7 @@ const highestValue = (data, key) => {
 */
 const showHighestTemperature = (data) => {
   const HIGHEST_TEMPERATURE = highestValue(data, 'tmax');
-  console.log(`The highest temperature day is ${HIGHEST_TEMPERATURE.fecha} at ${HIGHEST_TEMPERATURE.tmax}`);
+  console.log('The highest temperature day is ' + HIGHEST_TEMPERATURE.fecha + ' at ' + HIGHEST_TEMPERATURE.tmax);
 };
 
 /**
@@ -52,7 +52,7 @@ const showHighestTemperature = (data) => {
 */
 const showHighestPrecipitation = (data) => {
   const HIGHEST_PRECIPITATION = highestValue(data, 'prec');
-  console.log(`The highest precipitation day is ${HIGHEST_PRECIPITATION.fecha} at ${HIGHEST_PRECIPITATION.prec}`);
+  console.log('The highest precipitation day is ' + HIGHEST_TEMPERATURE.fecha + ' at ' + HIGHEST_TEMPERATURE.prec);
 };
 
 /**

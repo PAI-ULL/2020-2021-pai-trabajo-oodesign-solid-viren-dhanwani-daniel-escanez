@@ -13,20 +13,29 @@
 
 'use strict';
 
+/** Class that simulates a car */
 class Car {
+  /**
+   * Creates a car
+   * @param {string} brand
+   * @param {number} model
+   */
   constructor(brand, model) {
-    this.engine = new VWEngine(); 
-    this.brand = brand;
-    this.model = model;
+    this.brand_ = brand;
+    this.model_ = model;
+    this.engine_ = new VWEngine(); 
   }
+  /** Prints info about the car */
   getInfo() {
-    console.log(this.brand, this.model, this.engine.volume);
+    console.log(this.brand_, this.model_, this.engine_.volume_);
   }
-} 
+}
+/** Class that simulates a VWEngine */
 class VWEngine {
-  constructor(brand, model) {
-    this.volume = "1.2";
-    this.type = "internal—combustion";
+  /** Creates a VWEngine */
+  constructor() {
+    this.volume_ = 1.2;
+    this.type_ = 'internal—combustion';
   }
 }
 

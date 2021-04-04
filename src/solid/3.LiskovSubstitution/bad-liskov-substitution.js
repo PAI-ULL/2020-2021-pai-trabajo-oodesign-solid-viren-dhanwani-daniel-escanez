@@ -13,16 +13,26 @@
 
 'use strict';
 
+/** Class that simulates a bird */
 class Bird {
+  /**
+   * Create a formated string with the speed of the bird
+   * @param {number} speed
+   * @return {string}
+   */
   fly(speed) {
-    return `Flying at ${speed} km/h`;
+    return 'Flying at ' + speed + ' km/h';
   }
 }
 
-// LSP Violation:
+/** Class that simulates a penguin making an LSP Violation*/
 class Penguin extends Bird {
+  /**
+   * The method can't do the same of the super fly, making an LSP Violation
+   * @throws {Error}
+   */
   fly() {
-    return new Error("Sorry, I cant fly");
+    throw new Error('Sorry, I cant fly');
   }
 }
 

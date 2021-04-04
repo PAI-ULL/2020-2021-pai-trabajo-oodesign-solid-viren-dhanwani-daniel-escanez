@@ -7,7 +7,6 @@
   * @author Viren Sajju Dhanwani Dhanwani
   * @author José Daniel Escánez Expósito
   * @since 30.Mar.2021
-  * @desc Showcasing static methods
   * @see https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes
   */
 
