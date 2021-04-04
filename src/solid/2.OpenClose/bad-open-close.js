@@ -40,5 +40,5 @@ class Transportation {
 const TRANSPORTER1 = new Transportation('Truck', 10);
 const TRANSPORTER2 = new Transportation('Ship', 10);
 
-console.log(TRANSPORTER1.calculatePrice()); // 5000
-console.log(TRANSPORTER2.calculatePrice()); // 3000
+console.log(TRANSPORTER1.calculatePrice()); // -> 5000
+console.log(TRANSPORTER2.calculatePrice()); // -> 3000

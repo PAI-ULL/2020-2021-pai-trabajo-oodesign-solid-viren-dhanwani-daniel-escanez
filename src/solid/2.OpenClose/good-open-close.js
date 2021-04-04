@@ -105,6 +105,6 @@ const TRANSPORTATION1 = new Transportation(SHIP_TRANSPORTER, 10);
 const TRANSPORTATION2 = new Transportation(TRUCK_TRANSPORTER, 10);
 const TRANSPORTATION3 = new Transportation(PLANE_TRANSPORTER, 10);
 
-console.log(TRANSPORTATION1.calculatePrice()); // 3000
-console.log(TRANSPORTATION2.calculatePrice()); // 5000
-console.log(TRANSPORTATION3.calculatePrice()); // 10000
+console.log(TRANSPORTATION1.calculatePrice()); // -> 3000
+console.log(TRANSPORTATION2.calculatePrice()); // -> 5000
+console.log(TRANSPORTATION3.calculatePrice()); // -> 10000

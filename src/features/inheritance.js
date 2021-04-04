@@ -24,31 +24,29 @@ class Person {
    * @param {Array<String>} interests - List of interests
    */
   constructor(first, last, age, gender, interests) {
-    this.name = {
+    this.name_ = {
       first,
       last,
     };
     this.age = age;
-    this.gender = gender;
-    this.interests = interests;
+    this.gender_ = gender;
+    this.interests_ = interests;
   }
-
   /** Outputs the person greeting and saying her name */
   greeting() {
-    console.log('Hi! I\'m ' + this.name.first);
-  };
-
+    console.log('Hi! I\'m ' + this.name_.first);
+  }
   /** Outputs the person farewell and her name */
   farewell() {
-    console.log(this.name.first + ' has left the building. Bye for now!');
-  };
+    console.log(this.name_.first + ' has left the building. Bye for now!');
+  }
 }
 
 const han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
-han.greeting(); // Hi! I'm Han
+han.greeting(); // -> Hi! I'm Han
 
 const leia = new Person('Leia', 'Organa', 19, 'female', ['Government']);
-leia.farewell(); // Leia has left the building. Bye for now
+leia.farewell(); // -> Leia has left the building. Bye for now
 
 /**
  * Class that gathers information about a Teacher
@@ -67,15 +65,14 @@ class Teacher extends Person {
    */
   constructor(first, last, age, gender, interests, subject, grade) {
     super(first, last, age, gender, interests);
-
-    // subject and grade are specific to Teacher
+    // Subject and grade are specific to Teacher
     this.subject = subject;
-    this.grade = grade;
+    this.grade_ = grade;
   }
 }
 
 const snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
-snape.greeting(); // Hi! I'm Severus.
-snape.farewell(); // Severus has left the building. Bye for now.
-console.log(snape.age); // 58
-console.log(snape.subject); // Dark arts
+snape.greeting(); // -> Hi! I'm Severus.
+snape.farewell(); // -> Severus has left the building. Bye for now.
+console.log(snape.age); // -> 58
+console.log(snape.subject); // -> Dark arts

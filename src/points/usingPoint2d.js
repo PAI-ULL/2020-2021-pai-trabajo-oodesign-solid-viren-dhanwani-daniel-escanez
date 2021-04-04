@@ -17,7 +17,7 @@ import {Point2D} from './point2d.js';
 const ORIGIN = new Point2D();
 const POINT_2D = new Point2D(3, 4);
 
-console.log('staticDistance: ' + Point2D.staticDistance(ORIGIN, POINT_2D)); // 5
-console.log('instanceDistance: ' + ORIGIN.instanceDistance(POINT_2D)); // 5
+console.log('staticDistance: ' + Point2D.staticDistance(ORIGIN, POINT_2D)); // -> 5
+console.log('instanceDistance: ' + ORIGIN.instanceDistance(POINT_2D)); // -> 5
 console.log('instanceDistanceUsingStatic: ' +
-    ORIGIN.instanceDistanceUsingStatic(POINT_2D)); // 5
+    ORIGIN.instanceDistanceUsingStatic(POINT_2D)); // -> 5

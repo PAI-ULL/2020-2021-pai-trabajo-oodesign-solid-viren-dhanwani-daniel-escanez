@@ -44,4 +44,4 @@ class Manager extends Employee {
 }
 
 const MANAGER = new Manager();
-MANAGER.display();
+MANAGER.display(); // -> I am a Manager
