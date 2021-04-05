@@ -1,3 +1,3 @@
 # slides
 
-Use this directory to include a copy (PDF) of the slides of your project presentation
+In this directory you can find a copy (PDF) of the slides for the project presentation
