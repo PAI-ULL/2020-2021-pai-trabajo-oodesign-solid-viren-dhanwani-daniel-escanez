@@ -8,6 +8,10 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Liskov Substitution Principle
+  *     "Objects in a program should be replaceable with instances of their
+  *     subtypes without altering the correctness of that program"
+  *     This code follows the principle because the Eagle class can act as
+  *     a Bird or an Eagle indistinctly
   * @see https://en.wikipedia.org/wiki/Liskov_substitution_principle
   */
 

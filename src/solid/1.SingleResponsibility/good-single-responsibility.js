@@ -8,6 +8,10 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Single Responsability Principle
+  *     "There should never be more than a reason for a class to change"
+  *     In this code the responsibilities are properly separared,
+  *     the car runs and the mechanic changes the oil, achieving a better
+  *     work distribution
   * @see https://en.wikipedia.org/wiki/Single-responsibility_principle
   */
 
@@ -50,8 +54,8 @@ class Mechanic {
   }
 }
 
-const CAR = new Car('BMW', 19000);
+const car = new Car('BMW', 19000);
 const MECHANIC = new Mechanic();
 
-CAR.run();
-MECHANIC.changeOil(CAR);
+car.run();
+MECHANIC.changeOil(car);

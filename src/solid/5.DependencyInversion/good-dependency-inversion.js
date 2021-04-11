@@ -8,6 +8,13 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Dependency Inversion Principle
+  *     “High-level modules should not depend on low-level modules.
+  *     Both should depend on abstractions”
+  *     "Abstractions should not depend on details.
+  *     Details should depend on abstractions"
+  *     In this code it is displayed a car dependent on the generic engine.
+  *     This type of entity is in an equal abstraction level
+  *     that the Car entity
   * @see https://en.wikipedia.org/wiki/Dependency_inversion_principle
   */
 

@@ -8,6 +8,9 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that does not follow the Open/Closed Principle
+  *     "Software entities should be open for extension but closed for modification"
+  *     In this code, to add new transporters the method calculatePrice needs to be
+  *     modified, which is a modification of the class, not an extension
   * @see https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
   */
 

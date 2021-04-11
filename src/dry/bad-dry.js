@@ -39,15 +39,6 @@ const highestTemperature = (data) => {
 };
 
 /**
- * Outputs the day with the highest temperature
- * @param {Oject} data daily information of the weather in Santa Cruz de Tenerife
- */
-const showHighestTemperature = (data) => {
-  const HIGHEST_TEMPERATURE = highestTemperature(data);
-  console.log('The highest temperature day is ' + HIGHEST_TEMPERATURE.fecha + ' at ' + HIGHEST_TEMPERATURE.tmax);
-};
-
-/**
  * Computes which day has the highest precipitation
  * @param {Array<Object>} data daily information of the weather in Santa Cruz de Tenerife
  * @param {String} key property of the object to be analyzed
@@ -59,6 +50,15 @@ const highestPrecipitation = (data) => {
     const maximum = Number(parseFloat(max['prec'].replace(',', '.')));
     return actual > maximum ? day : max;
   });
+};
+
+/**
+ * Outputs the day with the highest temperature
+ * @param {Oject} data daily information of the weather in Santa Cruz de Tenerife
+ */
+const showHighestTemperature = (data) => {
+  const HIGHEST_TEMPERATURE = highestTemperature(data);
+  console.log('The highest temperature day is ' + HIGHEST_TEMPERATURE.fecha + ' at ' + HIGHEST_TEMPERATURE.tmax);
 };
 
 /**

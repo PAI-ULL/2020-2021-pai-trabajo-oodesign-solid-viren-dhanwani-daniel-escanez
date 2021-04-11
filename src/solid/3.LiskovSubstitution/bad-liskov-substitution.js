@@ -8,6 +8,10 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that does not follow the Liskov Substitution Principle
+  *     "Objects in a program should be replaceable with instances of their
+  *     subtypes without altering the correctness of that program"
+  *     In this code, the Penguin class cannot implement the 'fly' method of the
+  *     base class, breaking the principle
   * @see https://en.wikipedia.org/wiki/Liskov_substitution_principle
   */
 

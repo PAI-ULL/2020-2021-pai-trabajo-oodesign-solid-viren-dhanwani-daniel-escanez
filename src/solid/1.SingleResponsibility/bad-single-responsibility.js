@@ -8,6 +8,9 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that does not follow the Single Responsability Principle
+  *     "There should never be more than a reason for a class to change"
+  *     In this code it is displayed a car changing its own oil. This action
+  *     could be made by another entity, achieving a better work distribution
   * @see https://en.wikipedia.org/wiki/Single-responsibility_principle
   */
 
@@ -46,7 +49,7 @@ class Car {
   }
 }
 
-const CAR = new Car('BMW', 19000);
+const car = new Car('BMW', 19000);
 
-CAR.run();
-CAR.changeOil(); // it is not this class' responsibility
+car.run();
+car.changeOil(); // it is not this class' responsibility

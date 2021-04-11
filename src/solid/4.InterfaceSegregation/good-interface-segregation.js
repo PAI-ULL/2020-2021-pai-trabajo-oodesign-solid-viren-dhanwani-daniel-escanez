@@ -8,15 +8,19 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Interface Segregation Principle
+  *     “Clients should not be forced to depend upon the interfaces
+  *     that they do not use”
+  *     This code is an adaptation of the principle in JavaScript, and
+  *     does not force the user to implement the animationModule
   * @see https://en.wikipedia.org/wiki/Interface_segregation_principle
   */
 
 'use strict';
 
-/** Class that simulates a DOMTraverser */
-class DOMTraverser {
+/** Class that simulates a InteractiveProgram */
+class InteractiveProgram {
   /**
-   * Creates a DOMTraverser
+   * Creates a InteractiveProgram
    * @param {Object} settings
    */
   constructor(settings) {
@@ -25,7 +29,7 @@ class DOMTraverser {
     this.setup();
   }
   /**
-   * Setup the DOMTraverser
+   * Setup the InteractiveProgram
    */
   setup() {
     this.rootNode_ = this.settings_.rootNode_;
@@ -42,7 +46,7 @@ class DOMTraverser {
   }
 }
 
-const DOM_TRAVERSER = new DOMTraverser({
+const INTERACTIVE_PROGRAM = new InteractiveProgram({
   rootNode: 'body',
   options: {
     animationModule: () => {
@@ -52,4 +56,4 @@ const DOM_TRAVERSER = new DOMTraverser({
   },
 });
 
-console.log(DOM_TRAVERSER);
+console.log(INTERACTIVE_PROGRAM);

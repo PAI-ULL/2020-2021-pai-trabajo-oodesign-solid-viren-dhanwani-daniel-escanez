@@ -8,6 +8,9 @@
   * @author José Daniel Escánez Expósito
   * @since 03.Apr.2021
   * @desc Code that follows the Open/Closed Principle
+  *     "Software entities should be open for extension but closed for modification"
+  *     This code follows the principle because there can be multiple vehicles
+  *     without modifying the base class, only extending it
   * @see https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
   */
 
